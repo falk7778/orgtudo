@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<script>
+  window.pixelId = "6a2f9f85ce83cd3b9b9394e6";
+  var a = document.createElement("script");
+  a.setAttribute("async", "");
+  a.setAttribute("defer", "");
+  a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+  document.head.appendChild(a);
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Organiza Tudo – +1500 Mapas Mentais para Concursos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --navy:#0B1F4A;
+  --navy-mid:#15337A;
+  --green:#16A34A;
+  --green-dark:#15803D;
+  --green-light:#DCFCE7;
+  --yellow:#F59E0B;
+  --gold:#FCD34D;
+  --white:#FFFFFF;
+  --gray-50:#F8FAFC;
+  --gray-100:#F1F5F9;
+  --gray-200:#E2E8F0;
+  --gray-600:#475569;
+  --gray-800:#1E293B;
+  --radius:14px;
+  --radius-lg:20px;
+}
+body{font-family:'Inter',sans-serif;background:#fff;color:var(--gray-800);line-height:1.6;max-width:480px;margin:0 auto;overflow-x:hidden}
+
+/* HERO */
+.hero{background:linear-gradient(160deg,var(--navy) 0%,var(--navy-mid) 100%);padding:36px 24px 56px;text-align:center;position:relative;overflow:hidden}
+.hero::after{content:'';position:absolute;bottom:-40px;left:0;right:0;height:80px;background:#fff;border-radius:50% 50% 0 0/100% 100% 0 0}
+.badge{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.13);color:#fff;font-size:12px;font-weight:700;letter-spacing:.6px;text-transform:uppercase;padding:6px 16px;border-radius:100px;margin-bottom:18px;border:1px solid rgba(255,255,255,.22)}
+.hero h1{font-size:27px;font-weight:900;color:#fff;line-height:1.2;margin-bottom:12px}
+.hero h1 span{color:var(--gold)}
+.hero p{font-size:14px;color:rgba(255,255,255,.82);margin-bottom:20px;padding:0 4px}
+.hero-product-img{width:100%;max-width:340px;margin:0 auto 24px;display:block;border-radius:16px}
+.hero-stats{display:flex;justify-content:center;gap:0;margin-bottom:28px;border-radius:var(--radius);overflow:hidden;border:1px solid rgba(255,255,255,.15)}
+.hero-stat{flex:1;padding:14px 8px;text-align:center;border-right:1px solid rgba(255,255,255,.12)}
+.hero-stat:last-child{border-right:none}
+.hero-stat .num{font-size:20px;font-weight:800;color:var(--gold)}
+.hero-stat .lbl{font-size:10px;color:rgba(255,255,255,.65);margin-top:2px}
+.btn-cta{display:block;background:var(--green);color:#fff;font-size:16px;font-weight:800;text-decoration:none;text-align:center;padding:18px 24px;border-radius:100px;border:none;cursor:pointer;width:100%;letter-spacing:.3px;box-shadow:0 4px 20px rgba(22,163,74,.45);transition:transform .15s,box-shadow .15s}
+.btn-cta:active{transform:scale(.97)}
+.btn-cta.gold{background:linear-gradient(135deg,#F59E0B,#D97706);box-shadow:0 4px 20px rgba(245,158,11,.5)}
+.cta-sub{font-size:12px;color:rgba(255,255,255,.55);margin-top:10px}
+
+/* DOR */
+.pain{padding:52px 24px 44px;background:#fff}
+.section-eyebrow{font-size:11px;font-weight:700;color:var(--green);letter-spacing:.9px;text-transform:uppercase;margin-bottom:8px}
+.section-title{font-size:23px;font-weight:800;color:var(--navy);line-height:1.25;margin-bottom:24px}
+.pain-list{list-style:none;display:flex;flex-direction:column;gap:14px}
+.pain-item{display:flex;align-items:flex-start;gap:14px;background:var(--gray-50);border-radius:var(--radius);padding:15px}
+.pain-icon{flex-shrink:0;width:40px;height:40px;border-radius:10px;background:var(--green-light);display:flex;align-items:center;justify-content:center;font-size:19px}
+.pain-item p{font-size:14px;color:var(--gray-800);font-weight:500;line-height:1.45}
+
+/* PRODUTO */
+.product{background:var(--gray-50);padding:44px 24px}
+.product-highlight{background:var(--navy);border-radius:var(--radius-lg);padding:24px;text-align:center;margin-bottom:16px}
+.product-gallery{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:24px}
+.product-gallery img{width:100%;height:auto;object-fit:contain;border-radius:var(--radius);box-shadow:0 2px 10px rgba(0,0,0,.1);border:1px solid var(--gray-200);transition:transform 0.2s}
+.product-gallery img:hover{transform:scale(1.05)}
+.product-highlight .big{font-size:50px;font-weight:900;color:var(--gold);line-height:1}
+.product-highlight .lbl{font-size:14px;color:rgba(255,255,255,.8);margin-top:6px}
+.features{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:16px}
+.feat-box{background:#fff;border-radius:var(--radius);padding:14px;text-align:center;box-shadow:0 1px 8px rgba(0,0,0,.05)}
+.feat-box .fi{font-size:22px;margin-bottom:7px}
+.feat-box p{font-size:12px;font-weight:700;color:var(--navy)}
+.product-card{background:#fff;border-radius:var(--radius-lg);padding:20px;box-shadow:0 2px 16px rgba(0,0,0,.06)}
+.product-card h3{font-size:16px;font-weight:700;color:var(--navy);margin-bottom:4px}
+.product-card p{font-size:13px;color:var(--gray-600);margin-bottom:14px}
+.disciplines{display:flex;flex-wrap:wrap;gap:7px}
+.disc-tag{background:var(--navy);color:rgba(255,255,255,.9);font-size:11px;font-weight:600;padding:5px 11px;border-radius:100px}
+
+/* BÔNUS */
+.bonus{padding:44px 24px;background:#fff}
+@keyframes bonus-glow {
+  0% { box-shadow: 0 0 8px rgba(22, 163, 74, 0.3); border-color: var(--green-light); transform: scale(1); }
+  100% { box-shadow: 0 0 24px rgba(22, 163, 74, 0.8); border-color: var(--green); transform: scale(1.02); }
+}
+.bonus-card{border:2px solid var(--green);border-radius:var(--radius-lg);padding:24px 20px;margin-bottom:24px;display:flex;flex-direction:column;gap:16px;align-items:center;background:#fff;text-align:center;animation:bonus-glow 2s infinite alternate}
+.bonus-img{flex-shrink:0;width:100%;max-width:240px;height:auto;object-fit:contain;border-radius:10px}
+.bonus-body{display:flex;flex-direction:column;align-items:center}
+.bonus-body h4{font-size:18px;font-weight:800;color:var(--navy);margin-bottom:8px;line-height:1.3}
+.bonus-desc{font-size:14px;color:var(--gray-600);margin-bottom:12px;line-height:1.5}
+.bonus-body .strike{font-size:13px;color:var(--gray-600);text-decoration:line-through;display:inline-block;margin-bottom:8px;margin-right:0}
+.bonus-free-badge{display:inline-block;background:var(--green);color:#fff;font-size:14px;font-weight:900;padding:6px 18px;border-radius:100px;letter-spacing:0.5px}
+
+/* PROVA SOCIAL */
+.social{background:var(--gray-50);padding:44px 0 64px;position:relative;overflow:hidden}
+.social::after{content:'';position:absolute;bottom:-40px;left:0;right:0;height:80px;background:var(--navy);border-radius:50% 50% 0 0/100% 100% 0 0;pointer-events:none}
+.social-inner{padding:0 24px}
+.carousel-wrap{overflow:hidden;margin-top:20px}
+.carousel-track{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;padding:8px 24px 16px;scrollbar-width:none}
+.carousel-track::-webkit-scrollbar{display:none}
+.carousel-slide{flex:0 0 80vw;max-width:320px;scroll-snap-align:start;border-radius:var(--radius-lg);overflow:hidden;box-shadow:0 4px 16px rgba(0,0,0,.1);background:#fff}
+.carousel-slide img{width:100%;height:auto;display:block}
+.carousel-dots{display:flex;justify-content:center;gap:6px;padding:4px 0 0}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--gray-200);transition:background .2s,transform .2s;cursor:pointer;border:none}
+.dot.active{background:var(--navy);transform:scale(1.25)}
+.total-badge{display:inline-flex;align-items:center;gap:6px;background:var(--green-light);color:var(--green-dark);font-size:12px;font-weight:700;padding:7px 14px;border-radius:100px;margin-top:18px;margin-left:24px}
+
+/* OFERTA */
+.offer{background:var(--navy);padding:44px 24px 64px;text-align:center;position:relative;overflow:hidden}
+.offer::after{content:'';position:absolute;bottom:-40px;left:0;right:0;height:80px;background:#fff;border-radius:50% 50% 0 0/100% 100% 0 0;pointer-events:none}
+.offer-title{font-size:24px;font-weight:900;color:#fff;line-height:1.2;margin-bottom:8px}
+.offer-sub{font-size:14px;color:rgba(255,255,255,.65);margin-bottom:28px}
+.plans{display:flex;flex-direction:column;gap:16px}
+
+/* PLANO BÁSICO */
+.plan{border-radius:var(--radius-lg);padding:24px 20px;text-align:left;border:2px solid transparent;transition: transform 0.3s, box-shadow 0.3s}
+.plan:hover{transform: translateY(-4px)}
+.plan.basic{background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.15);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:0 8px 32px rgba(0,0,0,.15)}
+@keyframes premium-glow{0%{box-shadow:0 0 15px rgba(252,211,77,0.3), inset 0 0 10px rgba(252,211,77,0.1); border-color: rgba(252,211,77,0.7);}100%{box-shadow:0 0 30px rgba(252,211,77,0.8), inset 0 0 20px rgba(252,211,77,0.3); border-color: var(--gold);}}
+.plan.premium{background:linear-gradient(145deg, #0B1F4A 0%, #1e293b 100%);border:2px solid var(--gold);position:relative;animation:premium-glow 2.5s infinite alternate;overflow:hidden;z-index:1}
+.plan.premium::before{content:'';position:absolute;top:0;left:-100%;width:50%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.08),transparent);transform:skewX(-20deg);animation:shine 5s infinite;}
+@keyframes shine{0%{left:-100%}15%{left:200%}100%{left:200%}}
+.premium-img{width:100%;max-width:280px;margin:16px auto;display:block;border-radius:10px;mix-blend-mode:screen;filter:drop-shadow(0 4px 12px rgba(252,211,77,0.3))}
+.plan-badge{display:inline-block;font-size:11px;font-weight:800;padding:4px 12px;border-radius:100px;margin-bottom:12px;letter-spacing:.4px;text-transform:uppercase}
+.plan.basic .plan-badge{background:rgba(255,255,255,.12);color:rgba(255,255,255,.75)}
+.plan.premium .plan-badge{background:var(--gold);color:var(--navy);box-shadow:0 0 10px rgba(252,211,77,0.4)}
+.plan-name{font-size:18px;font-weight:800;margin-bottom:4px}
+.plan.basic .plan-name{color:#fff}
+.plan.premium .plan-name{color:var(--gold);font-size:22px;letter-spacing:1px}
+.plan-desc{font-size:13px;margin-bottom:16px;line-height:1.5}
+.plan.basic .plan-desc{color:rgba(255,255,255,.6)}
+.plan.premium .plan-desc{color:rgba(255,255,255,.8)}
+.plan-includes{list-style:none;margin-bottom:20px;display:flex;flex-direction:column;gap:8px}
+.plan-includes li{font-size:13px;display:flex;align-items:flex-start;gap:8px}
+.plan.basic .plan-includes li{color:rgba(255,255,255,.8)}
+.plan.premium .plan-includes li{color:#fff}
+.plan-includes li span.ic{flex-shrink:0;margin-top:1px}
+.plan-price-from{font-size:12px;text-decoration:line-through;margin-bottom:2px}
+.plan.basic .plan-price-from{color:rgba(255,255,255,.4)}
+.plan.premium .plan-price-from{color:rgba(255,255,255,.5)}
+.plan-price{font-size:42px;font-weight:900;line-height:1;margin-bottom:4px}
+.plan.basic .plan-price{color:var(--gold)}
+.plan.premium .plan-price{color:var(--gold);text-shadow:0 0 15px rgba(252,211,77,0.5);transform:scale(1.1);transform-origin:left center;margin-top:10px;margin-bottom:10px}
+.plan-price-label{font-size:12px;margin-bottom:18px}
+.plan.basic .plan-price-label{color:rgba(255,255,255,.5)}
+.plan.premium .plan-price-label{color:rgba(255,255,255,.6)}
+.urgency-bar{background:#e11d48;color:#fff;font-size:13px;font-weight:800;text-transform:uppercase;padding:12px;text-align:center;border-radius:var(--radius);margin-bottom:24px;box-shadow:0 4px 12px rgba(225,29,72,0.4);animation:pulse 2s infinite}
+@keyframes pulse{0%{opacity:1}50%{opacity:.85}100%{opacity:1}}
+.guarantee{display:flex;align-items:center;gap:12px;background:rgba(255,255,255,.07);border-radius:var(--radius);padding:14px;margin-top:20px;text-align:left}
+.guarantee-icon{font-size:26px;flex-shrink:0}
+.guarantee p{font-size:12px;color:rgba(255,255,255,.75);line-height:1.5}
+.guarantee strong{color:#fff}
+
+/* FAQ */
+.faq{padding:44px 24px 64px;background:#fff;position:relative;overflow:hidden}
+.faq::after{content:'';position:absolute;bottom:-40px;left:0;right:0;height:80px;background:var(--navy);border-radius:50% 50% 0 0/100% 100% 0 0;pointer-events:none}
+details{border-bottom:1px solid var(--gray-200);padding:15px 0}
+details:first-of-type{border-top:1px solid var(--gray-200)}
+summary{font-size:14px;font-weight:600;color:var(--navy);cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px}
+summary::after{content:'+';font-size:20px;color:var(--green);flex-shrink:0}
+details[open] summary::after{content:'−'}
+details p{font-size:13px;color:var(--gray-600);line-height:1.65;margin-top:11px;padding-right:8px}
+
+/* FOOTER */
+footer{background:var(--navy);padding:28px 24px;text-align:center;font-size:12px;color:rgba(255,255,255,0.7);border-top:1px solid rgba(255,255,255,0.1)}
+footer a{color:rgba(255,255,255,0.7);text-decoration:underline}
+
+/* STICKY */
+.sticky-bar{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:100%;max-width:480px;background:#fff;border-top:1px solid var(--gray-200);padding:10px 20px;z-index:100;box-shadow:0 -4px 20px rgba(0,0,0,.1)}
+.top-bar{background:#e11d48;color:#fff;font-size:12px;font-weight:800;text-transform:uppercase;padding:8px 12px;text-align:center;animation:pulse 2s infinite;width:100%;max-width:480px;margin:0 auto}
+
+/* MODAL */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(11, 31, 74, 0.9);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  backdrop-filter: blur(5px);
+}
+.modal-overlay.active {
+  display: flex;
+  animation: fadeIn 0.3s ease;
+}
+.modal-content {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  border: 2px solid var(--gold);
+  border-radius: var(--radius-lg);
+  padding: 20px 16px;
+  width: 100%;
+  max-width: 400px;
+  max-height: 90vh;
+  overflow-y: auto;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.5), 0 0 20px rgba(252,211,77,0.2);
+  animation: slideUp 0.3s ease;
+}
+.modal-close {
+  position: absolute;
+  top: 12px; right: 16px;
+  background: transparent; border: none;
+  color: rgba(255,255,255,0.6);
+  font-size: 24px; cursor: pointer;
+}
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes slideUp { from { transform: translateY(20px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar">OFERTA POR TEMPO LIMITADO, APENAS HOJE! <span class="current-date-span"></span></div>
+
+<!-- HERO -->
+<section class="hero">
+  <img src="logo.jpg" alt="Mapas Mentais 2.0" style="width:200px;margin:0 auto 24px;display:block;mix-blend-mode:screen">
+  <div class="badge">🧠 O Fim do "Deu Branco"</div>
+  <h1>Você estuda horas seguidas, mas na hora da questão... <span>DÁ BRANCO?</span></h1>
+  <p>O problema não é a sua inteligência, é o seu método de revisão. Descubra como mais de 1500 mapas mentais em <strong>PDF de alta qualidade</strong> ativam sua memória fotográfica e te fazem lembrar de qualquer assunto na hora da prova.</p>
+  <div style="margin: 0 auto 24px; width: 100%; max-width: 340px; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.3); border: 2px solid rgba(255,255,255,0.1);">
+    <script src="https://fast.wistia.com/player.js" async></script><script src="https://fast.wistia.com/embed/it579tvpyr.js" async type="module"></script><style>wistia-player[media-id='it579tvpyr']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/it579tvpyr/swatch'); display: block; filter: blur(5px); padding-top:189.72%; }</style> <wistia-player media-id="it579tvpyr" wistia-popover="true" aspect="0.527086383601757"></wistia-player>
+  </div>
+  <div class="hero-stats">
+    <div class="hero-stat"><div class="num">+1500</div><div class="lbl">Mapas Mentais</div></div>
+    <div class="hero-stat"><div class="num">15+</div><div class="lbl">Disciplinas</div></div>
+    <div class="hero-stat"><div class="num">7 dias</div><div class="lbl">Garantia</div></div>
+  </div>
+  <a href="#oferta" class="btn-cta">✅ ADQUIRIR AGORA COM GARANTIA DE 7 DIAS!</a>
+  <div style="display:flex;justify-content:center;gap:12px;margin-top:12px">
+    <span style="font-size:12px;color:rgba(255,255,255,.8);display:flex;align-items:center;gap:4px">🔒 Pagamento 100% Seguro</span>
+    <span style="font-size:12px;color:rgba(255,255,255,.8);display:flex;align-items:center;gap:4px">🛡️ 7 Dias de Garantia</span>
+  </div>
+</section>
+
+<!-- DOR -->
+<section class="pain">
+  <p class="section-eyebrow">Para quem é este material?</p>
+  <h2 class="section-title">Esses mapas mentais são EXATAMENTE PARA VOCÊ que:</h2>
+  <ul class="pain-list">
+    <li class="pain-item"><div class="pain-icon">🎯</div><p>Está <strong>perto da prova</strong> e precisa de um material 100% objetivo e direto ao ponto.</p></li>
+    <li class="pain-item"><div class="pain-icon">📚</div><p><strong>Não quer estudar 1000 folhas</strong> de materiais regulares e apostilas intermináveis.</p></li>
+    <li class="pain-item"><div class="pain-icon">🧠</div><p>Precisa de <strong>exemplos práticos e visuais</strong> para facilitar o entendimento e a memorização.</p></li>
+    <li class="pain-item"><div class="pain-icon">😩</div><p><strong>Não tem paciência</strong> para estudar textos longos, chega cansado do trabalho e fica desmotivado.</p></li>
+    <li class="pain-item"><div class="pain-icon">🏆</div><p>Quer ter um <strong>verdadeiro diferencial</strong> contra seus concorrentes para garantir a aprovação.</p></li>
+  </ul>
+</section>
+
+<!-- PRODUTO -->
+<section class="product">
+  <p class="section-eyebrow">O que você recebe</p>
+  <h2 class="section-title">Tudo que você precisa para passar</h2>
+  <div class="product-highlight">
+    <div class="big">+1500</div>
+    <div class="lbl">Mapas Mentais Abrangentes para Concursos e OAB</div>
+  </div>
+  <div class="product-gallery">
+    <img src="img1.png" alt="Exemplo de Mapa Mental 1" loading="lazy">
+    <img src="img2.png" alt="Exemplo de Mapa Mental 2" loading="lazy">
+    <img src="img3.png" alt="Exemplo de Mapa Mental 3" loading="lazy">
+    <img src="img4.png" alt="Exemplo de Mapa Mental 4" loading="lazy">
+  </div>
+  <div class="features">
+    <div class="feat-box"><div class="fi">✅</div><p>100% Atualizados</p></div>
+    <div class="feat-box"><div class="fi">🏆</div><p>Por Especialistas Aprovados</p></div>
+    <div class="feat-box"><div class="fi">🧠</div><p>Facilita sua Aprendizagem</p></div>
+    <div class="feat-box"><div class="fi">📄</div><p>PDF em Alta Qualidade</p></div>
+  </div>
+  <div class="product-card">
+    <h3 style="font-size: 18px; color: var(--navy); margin-bottom: 8px;">+1500 Mapas Mentais divididos em:</h3>
+    <p style="margin-bottom: 16px;">Os conteúdos mais cobrados pelas principais bancas do Brasil.</p>
+    <div class="disciplines">
+      <span class="disc-tag">Direito Administrativo</span>
+      <span class="disc-tag">Direito Constitucional</span>
+      <span class="disc-tag">Direito Civil</span>
+      <span class="disc-tag">Direito Processo Civil</span>
+      <span class="disc-tag">Direito Penal</span>
+      <span class="disc-tag">Direito Processo Penal</span>
+      <span class="disc-tag">Direito Tributário</span>
+      <span class="disc-tag">Direito Trabalhista</span>
+      <span class="disc-tag">Direito Processual do Trabalho</span>
+      <span class="disc-tag">Direito Previdenciário</span>
+      <span class="disc-tag">Direito Eleitoral</span>
+      <span class="disc-tag">Direito Empresarial</span>
+      <span class="disc-tag">Língua Portuguesa</span>
+      <span class="disc-tag">Informática Básica</span>
+      <span class="disc-tag">Tecnologia da Informação</span>
+      <span class="disc-tag">Raciocínio Lógico</span>
+    </div>
+  </div>
+</section>
+
+<!-- BÔNUS -->
+<section class="bonus">
+  <p class="section-eyebrow">Bônus exclusivos</p>
+  <h2 class="section-title">Você também leva tudo isso de graça!</h2>
+  <div class="bonus-card">
+    <img class="bonus-img" src="bonus1.png" alt="Guia Como Fazer Revisão">
+    <div class="bonus-body">
+      <h4>Guia Como Fazer Revisão</h4>
+      <p class="bonus-desc">Aprenda as melhores técnicas para revisar o conteúdo e fixar a matéria até o dia da prova.</p>
+      <span class="strike">R$29,90</span>
+      <span class="bonus-free-badge">✅ GRÁTIS</span>
+    </div>
+  </div>
+  <div class="bonus-card">
+    <img class="bonus-img" src="bonus2.png" alt="Bizus e Mnemônicos">
+    <div class="bonus-body">
+      <h4>Bizus e Mnemônicos – +100 macetes de Direito</h4>
+      <p class="bonus-desc">Mais de 100 macetes práticos e esquematizados para você decorar os prazos e regras essenciais.</p>
+      <span class="strike">R$39,90</span>
+      <span class="bonus-free-badge">✅ GRÁTIS</span>
+    </div>
+  </div>
+  <div class="bonus-card">
+    <img class="bonus-img" src="bonus3.png" alt="Questões para Concursos">
+    <div class="bonus-body">
+      <h4>Questões para Concursos Comentadas</h4>
+      <p class="bonus-desc">Treine seus conhecimentos com dezenas de questões estratégicas separadas por assunto.</p>
+      <span class="strike">R$19,90</span>
+      <span class="bonus-free-badge">✅ GRÁTIS</span>
+    </div>
+  </div>
+  <div class="bonus-card">
+    <img class="bonus-img" src="bonus4.png" alt="Redação Nota 10">
+    <div class="bonus-body">
+      <h4>Redação Nota 10 – Discursiva Perfeita</h4>
+      <p class="bonus-desc">Guia completo com estruturas prontas e dicas infalíveis para gabaritar a prova discursiva.</p>
+      <span class="strike">R$19,90</span>
+      <span class="bonus-free-badge">✅ GRÁTIS</span>
+    </div>
+  </div>
+</section>
+
+<!-- PROVA SOCIAL -->
+<section class="social">
+  <div class="social-inner">
+    <p class="section-eyebrow">Depoimentos reais</p>
+    <h2 class="section-title">Quem usou, aprovou de verdade</h2>
+  </div>
+  <div class="carousel-wrap">
+    <div class="carousel-track" id="carousel">
+      <div class="carousel-slide"><img src="depoimento3.png" alt="Depoimento 3" loading="lazy"></div>
+      <div class="carousel-slide"><img src="depoimento4.png" alt="Depoimento 4" loading="lazy"></div>
+      <div class="carousel-slide"><img src="depoimento5.png" alt="Depoimento 5" loading="lazy"></div>
+      <div class="carousel-slide"><img src="depoimento6.png" alt="Depoimento 6" loading="lazy"></div>
+      <div class="carousel-slide"><img src="depoimento7.png" alt="Depoimento 7" loading="lazy"></div>
+      <div class="carousel-slide"><img src="depoimento8.png" alt="Depoimento 8" loading="lazy"></div>
+      <div class="carousel-slide"><img src="depoimento9.png" alt="Depoimento 9" loading="lazy"></div>
+      <div class="carousel-slide"><img src="depoimento10.png" alt="Depoimento 10" loading="lazy"></div>
+      <div class="carousel-slide"><img src="depoimento11.png" alt="Depoimento 11" loading="lazy"></div>
+      <div class="carousel-slide"><img src="depoimento12.png" alt="Depoimento 12" loading="lazy"></div>
+    </div>
+  </div>
+  <div class="carousel-dots" id="dots"></div>
+  <div style="padding:0 24px">
+    <div class="total-badge">⭐ +5.000 alunos satisfeitos</div>
+  </div>
+</section>
+
+<script>
+(function(){
+  var track=document.getElementById('carousel');
+  var dotsEl=document.getElementById('dots');
+  var slides=track.querySelectorAll('.carousel-slide');
+  var total=slides.length,current=0;
+  for(var i=0;i<total;i++){
+    var d=document.createElement('button');
+    d.className='dot'+(i===0?' active':'');
+    d.setAttribute('aria-label','Depoimento '+(i+1));
+    d.dataset.i=i;
+    d.onclick=function(){track.scrollTo({left:slides[this.dataset.i].offsetLeft-24,behavior:'smooth'})};
+    dotsEl.appendChild(d);
+  }
+  var dots=dotsEl.querySelectorAll('.dot');
+  var ticking=false;
+  track.addEventListener('scroll',function(){
+    if(ticking)return;ticking=true;
+    requestAnimationFrame(function(){
+      var closest=0,minDist=Infinity;
+      slides.forEach(function(s,i){var dist=Math.abs(s.getBoundingClientRect().left-track.getBoundingClientRect().left);if(dist<minDist){minDist=dist;closest=i;}});
+      if(closest!==current){dots[current].classList.remove('active');dots[closest].classList.add('active');current=closest;}
+      ticking=false;
+    });
+  });
+  var auto=setInterval(function(){var next=(current+1)%total;track.scrollTo({left:slides[next].offsetLeft-24,behavior:'smooth'});},3000);
+  track.addEventListener('touchstart',function(){clearInterval(auto);},{passive:true});
+})();
+</script>
+
+<!-- OFERTA -->
+<section class="offer" id="oferta">
+  <p class="offer-title" style="color: var(--gold); text-transform: uppercase;">FIZEMOS ALGO ESPECIAL PARA VOCÊ 🚀</p>
+  <p class="offer-sub">Dois planos, um único objetivo: sua aprovação.</p>
+  <img src="logo-mais-vendido.png" alt="O Mais Vendido" style="width:100%;max-width:320px;margin:0 auto 32px;display:block;mix-blend-mode:screen;animation:pulse 3s infinite;">
+
+  <div class="urgency-bar">OFERTA POR TEMPO LIMITADO, APENAS HOJE! <span class="current-date-span"></span></div>
+  <script>
+    var today = new Date().toLocaleDateString('pt-BR');
+    document.querySelectorAll('.current-date-span').forEach(function(el) { el.innerText = today; });
+  </script>
+
+  <div class="plans">
+
+    <!-- PLANO BÁSICO R$10 -->
+    <div class="plan basic">
+      <span class="plan-badge">🔓 Acesso Básico</span>
+      <p class="plan-name">Plano Essencial</p>
+      <p class="plan-desc">Ideal para quem quer começar com o essencial e já dar um passo à frente na preparação.</p>
+      <ul class="plan-includes">
+        <li><span class="ic">✅</span> +1500 Mapas Mentais completos</li>
+        <li><span class="ic">✅</span> Download imediato de todos os arquivos</li>
+        <li><span class="ic">✅</span> PDF de alta resolução (estude onde quiser)</li>
+        <li><span class="ic">✅</span> 15+ disciplinas cobertas</li>
+        <li><span class="ic">❌</span><span style="opacity:.45"> Bônus exclusivos</span></li>
+        <li><span class="ic">❌</span><span style="opacity:.45"> Atualizações vitalícias</span></li>
+        <li><span class="ic">❌</span><span style="opacity:.45"> Suporte prioritário</span></li>
+      </ul>
+      <p class="plan-price-from">De R$87,90</p>
+      <p class="plan-price">R$10<small style="font-size:20px">,00</small></p>
+      <p class="plan-price-label">pagamento único · acesso imediato</p>
+      <a href="#" onclick="openModal(event)" class="btn-cta" style="font-size:15px;padding:16px 20px">QUERO O ESSENCIAL POR R$10</a>
+      <p style="font-size:11px;color:rgba(255,255,255,0.7);text-align:center;margin-top:10px;display:flex;align-items:center;justify-content:center;gap:4px"><span>🔒</span> Compra Segura <span>🛡️</span> Risco Zero</p>
+    </div>
+
+    <!-- PLANO PREMIUM R$19,90 -->
+    <div class="plan premium">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+        <span class="plan-badge" style="margin-bottom:0;">⭐ MAIS COMPLETO</span>
+        <span style="background: #ef4444; color: #fff; font-size: 10px; font-weight: 800; padding: 4px 8px; border-radius: 4px; animation: pulse 2s infinite; letter-spacing: 0.5px;">🔥 O MAIS VENDIDO</span>
+      </div>
+      <p class="plan-name">Plano Premium</p>
+      <img src="oferta.png" class="premium-img" style="margin:12px auto 20px; background: var(--navy); mix-blend-mode: normal; padding: 10px; border-radius: 16px;" alt="Plano Premium">
+      <p class="plan-desc">O pacote completo para quem quer <strong>a aprovação mais rápida possível</strong>, com todos os bônus e suporte.</p>
+      <ul class="plan-includes">
+        <li><span class="ic">✅</span> +1500 Mapas Mentais completos</li>
+        <li><span class="ic">✅</span> Acesso vitalício aos materiais</li>
+        <li><span class="ic">✅</span> PDF de alta resolução (baixe e imprima)</li>
+        <li><span class="ic">✅</span> 15+ disciplinas cobertas</li>
+        <li><span class="ic">🎁</span> <strong>Guia Como Fazer Revisão</strong> (R$29,90)</li>
+        <li><span class="ic">🎁</span> <strong>Bizus e Mnemônicos</strong> (R$39,90)</li>
+        <li><span class="ic">🎁</span> <strong>Questões Comentadas</strong> (R$19,90)</li>
+        <li><span class="ic">🎁</span> <strong>Redação Nota 10</strong> (R$19,90)</li>
+        <li><span class="ic">🔄</span> <strong>Atualizações vitalícias</strong></li>
+        <li><span class="ic">💬</span> <strong>Suporte prioritário por WhatsApp</strong></li>
+      </ul>
+      <p class="plan-price-from">De R$197,40 (valor total)</p>
+      <p class="plan-price">R$19<small style="font-size:20px">,90</small></p>
+      <p class="plan-price-label">pagamento único · acesso imediato</p>
+      <a href="https://ggcheckout.app/checkout/v3/7hDnwyMEQJbQRqsqEQNi" class="btn-cta gold" style="font-size:15px;padding:16px 20px">🏆 QUERO O PREMIUM POR R$19,90</a>
+      <p style="font-size:11px;color:rgba(255,255,255,0.6);text-align:center;margin-top:10px">Economia de R$177,50 em bônus incluídos</p>
+      <p style="font-size:11px;color:rgba(255,255,255,0.7);text-align:center;margin-top:6px;display:flex;align-items:center;justify-content:center;gap:4px"><span>🔒</span> Pagamento Seguro <span>🛡️</span> 7 Dias de Garantia</p>
+    </div>
+
+  </div>
+
+  <div class="guarantee" style="border: 1px solid var(--gold); background: rgba(252,211,77,0.1); border-radius: 12px;">
+    <div class="guarantee-icon" style="font-size: 34px;">🛡️</div>
+    <p><strong>Garantia Incondicional de 7 Dias!</strong><br>Se você não gostar do material ou achar que não ajudou nos seus estudos, devolvemos 100% do seu dinheiro, sem burocracia. O risco é todo nosso!</p>
+  </div>
+  <p style="font-size:11px;color:rgba(255,255,255,.4);margin-top:16px;text-align:center">🔒 Compra 100% segura · Pagamento criptografado</p>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <p class="section-eyebrow">Dúvidas frequentes</p>
+  <h2 class="section-title">Perguntas que todo mundo faz</h2>
+  <details>
+    <summary>Como vou acessar o material?</summary>
+    <p>Após a confirmação do pagamento, você receberá um link seguro no seu e-mail para baixar todos os arquivos em <strong>PDF de alta qualidade</strong>. Você poderá estudar pelo celular, computador, tablet ou imprimir.</p>
+  </details>
+  <details>
+    <summary>Qual a diferença entre o Essencial e o Premium?</summary>
+    <p>O Essencial dá acesso aos +1500 Mapas Mentais. O Premium inclui tudo isso mais os 4 bônus exclusivos (Guia de Revisão, Bizus e Mnemônicos, Questões Comentadas e Redação Nota 10), além de atualizações vitalícias e suporte por WhatsApp.</p>
+  </details>
+  <details>
+    <summary>O material é atualizado?</summary>
+    <p>No plano Premium, sim! Sempre que houver atualizações legislativas ou novos conteúdos, você receberá o material atualizado sem custo adicional.</p>
+  </details>
+  <details>
+    <summary>Funciona para qualquer concurso?</summary>
+    <p>Os mapas mentais cobrem as disciplinas mais cobradas em concursos federais, estaduais, municipais e OAB. São mais de 15 áreas do conhecimento.</p>
+  </details>
+  <details>
+    <summary>E se eu não gostar?</summary>
+    <p>Você tem 7 dias de garantia incondicional. Basta enviar um e-mail e devolvemos 100% do valor pago, sem nenhuma pergunta.</p>
+  </details>
+  <details>
+    <summary>Posso imprimir os mapas mentais?</summary>
+    <p>Sim! O material foi pensado para facilitar a sua vida: você pode baixar tudo em <strong>PDF de alta resolução</strong> para imprimir e fazer suas anotações, ou ler diretamente nas telas (celular/computador).</p>
+  </details>
+</section>
+
+<footer>
+  <img src="logo.jpg" alt="Mapas Mentais 2.0" style="width:160px;margin:0 auto 16px;display:block;mix-blend-mode:screen">
+  <p style="margin-bottom:8px">© 2026 Mapas Mentais. Todos os direitos reservados.</p>
+  <p><a href="#">Política de Privacidade</a> · <a href="#">Termos de Uso</a> · <a href="#">Contato</a></p>
+  <p style="margin-top:10px;font-size:11px;color:#94A3B8">Este produto é digital. O acesso é liberado imediatamente após a confirmação do pagamento.</p>
+</footer>
+
+
+
+<!-- UPSell Modal -->
+<div id="upsellModal" class="modal-overlay">
+  <div class="modal-content">
+    <button class="modal-close" onclick="closeModal()">×</button>
+    <span class="plan-badge" style="background:var(--gold);color:var(--navy);box-shadow:0 0 10px rgba(252,211,77,0.4);margin-bottom:8px;">⚡ OFERTA EXCLUSIVA</span>
+    <h2 style="color:var(--gold);margin:4px 0 8px;font-size:20px;font-weight:900;line-height:1.2;">Espere! Leve o Premium por apenas R$14,90</h2>
+    <p style="color:rgba(255,255,255,.8);font-size:13px;margin-bottom:12px;line-height:1.4;">Antes de finalizar, leve <strong>TODOS os benefícios do Premium</strong> com um desconto especial.</p>
+    
+    <ul class="plan-includes" style="text-align:left;background:rgba(0,0,0,.2);padding:10px 12px;border-radius:10px;margin-bottom:12px;color:#fff;gap:6px;">
+      <li><span class="ic">✅</span> +1500 Mapas Mentais completos</li>
+      <li><span class="ic">✅</span> Acesso vitalício aos materiais</li>
+      <li><span class="ic">✅</span> PDF de alta resolução para imprimir</li>
+      <li><span class="ic">✅</span> 15+ disciplinas cobertas</li>
+      <li><span class="ic">🎁</span> <strong>Guia Como Fazer Revisão</strong></li>
+      <li><span class="ic">🎁</span> <strong>Bizus e Mnemônicos</strong></li>
+      <li><span class="ic">🎁</span> <strong>Questões Comentadas</strong></li>
+      <li><span class="ic">🎁</span> <strong>Redação Nota 10</strong></li>
+      <li><span class="ic">🔄</span> <strong>Atualizações vitalícias</strong></li>
+      <li><span class="ic">💬</span> <strong>Suporte prioritário por WhatsApp</strong></li>
+    </ul>
+    
+    <div style="margin-bottom:12px;">
+      <p style="font-size:11px;text-decoration:line-through;color:rgba(255,255,255,.5);margin-bottom:0">De R$19,90</p>
+      <p style="font-size:32px;font-weight:900;color:var(--gold);line-height:1;margin-bottom:2px">R$14<small style="font-size:16px">,90</small></p>
+      <p style="font-size:11px;color:rgba(255,255,255,.6)">pagamento único · acesso imediato</p>
+    </div>
+    
+    <a href="https://ggcheckout.app/checkout/v3/JPIIx62JOXqDGOJyTVkh" class="btn-cta gold" style="font-size:14px;padding:12px 16px;margin-bottom:8px;">🎉 SIM! QUERO O PREMIUM POR R$14,90</a>
+    <p style="font-size:11px;color:rgba(255,255,255,0.7);text-align:center;margin-bottom:12px;display:flex;align-items:center;justify-content:center;gap:4px"><span>🔒</span> Checkout Seguro <span>🛡️</span> Risco Zero</p>
+    <a href="https://ggcheckout.app/checkout/v3/4FmU4k4xJFoYSJy2Wqyl" style="color:rgba(255,255,255,.6);font-size:12px;text-decoration:underline;display:block;">Não, obrigado. Quero apenas o Essencial por R$10.</a>
+  </div>
+</div>
+
+<script>
+function openModal(e) {
+  e.preventDefault();
+  document.getElementById('upsellModal').classList.add('active');
+}
+function closeModal() {
+  document.getElementById('upsellModal').classList.remove('active');
+}
+</script>
+
+</body>
+</html>
